@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> PARA TI MI AMOR</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #69E23A;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	color: #C00;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+	color: #000066;
+	font-size: 18%;
+}
+
+/* ~~ este contenedor rodea a todas las demás divs, lo que les asigna su anchura basada en porcentaje ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* puede que sea conveniente una anchura máxima (max-width) para evitar que este diseño sea demasiado ancho en un monitor grande. Esto mantiene una longitud de línea más legible. IE6 no respeta esta declaración. */
+	min-width: 780px;/* puede que sea conveniente una anchura mínima (min-width) para evitar que este diseño sea demasiado estrecho. Esto permite que la longitud de línea sea más legible en las columnas laterales. IE6 no respeta esta declaración. */
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño. No es necesario si establece la anchura de .container en el 100%. */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #3088BC;
+}
+
+/* ~~ Estas son las columnas para el diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de las divs. Los elementos situados dentro de estas divs tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+2) No se asigna margen a las columnas, ya que todas ellas son flotantes. Si es preciso añadir un margen, evite colocarlo en el lado hacia el que se produce la flotación (por ejemplo: un margen derecho en una div configurada para flotar hacia la derecha). En muchas ocasiones, puede usarse relleno como alternativa. En el caso de divs para las que deba incumplirse esta regla, deberá añadir una declaración "display:inline" a la regla de la div para evitar un error que provoca que algunas versiones de Internet Explorer dupliquen el margen.
+
+3) Dado que las clases se pueden usar varias veces en un documento (y que también se pueden aplicar varias clases a un elemento), se ha asignado a las columnas nombres de clases en lugar de ID. Por ejemplo, dos divs de barra lateral podrían apilarse si fuera necesario. Si lo prefiere, éstas pueden cambiarse a ID fácilmente, siempre y cuando las utilice una sola vez por documento.
+
+4) Si prefiere que la navegación esté a la derecha en lugar de a la izquierda, simplemente haga que estas columnas floten en dirección opuesta (todas a la derecha en lugar de todas a la izquierda) y éstas se representarán en orden inverso. No es necesario mover las divs por el código fuente HTML.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 20%;
+	background-color: #3088BC;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 60%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	background-color: #3088BC;
+	padding: 10px 0;
+}
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+
+/* ~~ Los estilos de lista de navegación (pueden eliminarse si opta por usar un menú desplegable predefinido como el de Spry) ~~ */
+ul.nav {
+	list-style: none; /* esto elimina el marcador de lista */
+	border-top: 1px solid #666; /* esto crea el borde superior de los vínculos (los demás se sitúan usando un borde inferior en el LI) */
+	margin-bottom: 15px; /* esto crea el espacio entre la navegación en el contenido situado debajo */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* esto crea la separación de los botones */
+}
+ul.nav a, ul.nav a:visited { /* al agrupar estos selectores, se asegurará de que los vínculos mantengan el aspecto de botón incluso después de haber sido visitados */
+	padding: 5px 5px 5px 15px;
+	display: block; /* esto asigna propiedades de bloque al vínculo, lo que provoca que llene todo el LI que lo contiene. Esto provoca que toda el área reaccione a un clic de ratón. */
+	text-decoration: none;
+	background-color: #E23139;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fondo y del texto tanto para usuarios que naveguen con ratón como para los que lo hagan con teclado */
+	background-color: #E23139;
+	color: #FFF;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #E23139;
+	position: relative;/* esto da a IE6 hasLayout para borrar correctamente */
+	clear: both; /* esta propiedad de borrado fuerza a .container a conocer dónde terminan las columnas y a contenerlas */
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+body,td,th {
+	color: #F00;
+}
+#apDiv1 {
+	position: absolute;
+	width: 10px;
+	height: 400px;
+	z-index: 1;
+	left: 10px;
+	top: 10px;
+	background-image: url(18058214_1510441105654992_3120971575243435249_n.jpg);
+	
+	background-color: #FF0000;
+	overflow: visible;
+	visibility: visible;
+}
+#apDiv2 {
+	position: absolute;
+	width: 267px;
+	height: 180px;
+	z-index: 1;
+	left: 291px;
+	top: 10px;
+	background-image: url(18058214_1510441105654992_3120971575243435249_n.jpg);
+}
+#apDiv3 {
+	position: absolute;
+	width: 550px;
+	height: 153px;
+	z-index: 1;
+	left: 80px;
+	top: 113px;
+	background-image: url(18058214_1510441105654992_3120971575243435249_n.jpg);
+}
+-->
+</style><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* este margen negativo de 1 px puede situarse en cualquiera de las columnas de este diseño con el mismo efecto corrector. */
+ul.nav a { zoom: 1; }  /* la propiedad de zoom da a IE el desencadenante hasLayout que necesita para corregir el espacio en blanco extra existente entre los vínculos */
+</style>
+<![endif]-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('Aldo/imagenes y cosas/IMG_27342101484512.jpeg','18578534_1534717536560682_40735599_n.jpg','CRUZ.jpg','FB_IMG_1430434145955.jpg')">
+
+<p>&nbsp;</p>
+<div class="container">
+  <div class="header"><!-- end .header --><img src="WhatsApp Image 2021-02-06 at 20.30.08.jpeg" width="160" height="140" alt=""/></div>
+<div class="sidebar1">
+    <ul class="nav">
+    </ul>
+    <p> ESTO ES UNA PARTE DE TODO LO QUE QUIERO DECIRTE Y NO ME ATREVO A HACERLO POR MIEDO Y POR QUE CUANDO QUIERO DECIRTE ALGO ME PONGO NERVIOSO Y NO ME SALEN LAS PALABRAS, ERES MUY ESPECIAL PARA MI, DESDE QUE LLEGASTE A MI VIDA SOLO LE HAS DADO AMOR Y FELICIDAD A MIS DIAS BUENOS Y EN LOS MALOS TAMBIEN, ERES EL AMOR DE MI VIDA, NO DUDES NUNCA DEL AMOR QUE TE TENGO Y LO FELIZ QUE ME HACES, QUIERO SER EL MEJOR NOVIO QUE HAYAS TENIDO, LE DOY GRACIAS A DIOS Y A LA VIDA POR HABERTE PUESTO EN MI CAMINO, SOLO QUIERO QUE SEPAS LO MUCHO QUE TE AMO MI AMOR, ESPERO TE GUSTE Y LEELO HASTA EL FINAL POR QUE CADA PALABRA QUE DIGA QUIERO QUE LA SIENTAS HASTA LO MAS PROFUNDO DE TU CORAZONCITO.
+	FELIZ 14 DE FEBRERO MI AMOR</p>
+    
+  <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1><MARQUEE><center> PARA MI PRINCESA HERMOSA </center></MARQUEE></h1>
+    <p> REALMENTE NO SE COMO EMPEZAR AMOR, EMPEZEMOS POR DECIRTE CUANTO TE AMO, TE AMO COMO A NADIE HE AMADO EN EL MUNDO, TE AMO POR COMO ERES, POR TU FORMA DE SER, POR HACERME CREER CADA DIA QUE ES MEJOR, POR DESPERTAR ESE SENTIMIENTO DE AMOR EN MI, POR CUIDAR MI CORAZONCITO, TE AMO POR MUCHAS COSAS, PERO SOBRE TODO LA MAS IMPORTANTE, TE AMO POR COMO TU ERES, AMO TODO DE TI Y CADA PARTE DE TU SER.</p>
+    <p> DESDE QUE TE CONOCI SUPE QUE SERIAS MUY IMPORTANTE PARA MI Y MIRA, QUIEN DIRIA QUE AHORITA ESTARIA CON LA NIÑA MAS PRECIOSA DEL MUNDO, ERES UN AMOR Y SIEMPRE TE LO VOY A DECIR, LLEGASTE A CAMBIAR MI VIDA POR COMPLETO Y TE AMO, SIEMPRE TE AMARE.</p>
+    <p>ERES MI PUMITA, MI BEBE, MI PRINCESA, MI REYNA, MI NIÑA PRECIOSA, MI CORAZON, MI TESORO HERMOSO, MI CHIQUITA, ERES TODO PARA MI, AMOR DE MI VIDA.</p>
+    <p> QUIERO ESTAR CONTIGO TODA LA VIDA POR QUE SE QUE ERES TU, NO SE COMO PERO SE QUE ERES TUUU Y CONTIGO QUIERO ESTAR TODA MI VIDA, QUIERO CASARME CONTIGO Y FORMAR UNA FAMILIA ALGUN DIA, ERES TODA MI VIDA ENTERA, ERES MI OTRA MITAD, TE JURO QUE NO ME IMAGINO UNA VIDA SIN TI. SE QUE A VECES TENEMOS DIFERENCIAS PERO TE JURO QUE TE AMO COMO A NADIE, Y QUE MI AMOR POR TI ES MAS SINCERO QUE TODO LO QUE PUEDAS IMAGINARTE O PENSAR, QUIERO ESTAR CONTIGO, QUIERO ESTAR EN TU VIDA, QUIERO QUE TE QUEDES PARA SIEMPRE, POR QUE SE DESDE EL FONDO DE MI CORAZON QUE ESTAMOS DESTINADOS A ESTAR JUNTOS, TE AMO PUMITA</p>
+    <a href="#" title="AGGF" onmouseover="MM_swapImage('HGJGH','','../IMG_27342101484512.jpeg',1)" onmouseout="MM_swapImgRestore()"><CENTER><img src="WhatsApp Image 2021-02-07 at 00.01.09.jpeg" width="500" height="430" alt=""/></a></CENTER>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    <h2><center><MARQUEE> NUESTRO AMOR</MARQUEE></center></h2>
+    
+<p> ESTOS HAN SIDO LOS MESES MAS BONITOS DE MI VIDA :') AUN RECUERDO COMO EMPEZO TODO, RECUERDAS EL SHHHH TE VA A ESCUCHAR MI MAMA JSJSJ NUNCA LO VOY A OLVIDAR, DESDE AHI EMPEZO NUESTRA GRAN HISTORIA DE AMOR, A LOS DIAS SIGUIENTES NO QUERIAMOS NI HABLAR POR QUE ESTABAMOS NERVIOSOS Y NOS DABA MIEDO DECIRNOS EL UNO AL OTRO LO QUE SENTIAMOS JSJS PERO DESPUES TODO SE FUE DANDO YY TE PREGUNTE, ¿SERA QUE ME AMAS DE OTRA FORMA DIFERENTE? Y SENTI TAN BONITO CUANDO ME DIJISTE QUE SI, DESDE AHI EMPEZO TODO EL AMOR DE NOSOTROS, TE HACIA REIR TODOS LOS DIAS, NOS LA PASABAMOS JUGANDO, O VIENDO PELICULAS, TE GUSTA QUE TE CANTE APESAR DE QUE NO SE, A MI ME ENCANTA CUANDO ME DAS BESITOS, Y ME DICES QUE ME AMAS, CUANDO ME DICES TODO LO QUE SIENTES POR MI, SIENTO QUE NO ME FALTA NADA MAS, TE JURO QUE CONTIGO ES TENERLO TODO, MI AMOR, NO TIENES IDEA DE CUANTO TE AMO, AMO PASAR TIEMPO CONTIGO, AMO CADA COSA QUE HACES, CADA COSA QUE HACEMOS, TE JURO QUE LA DISFRUTO Y LA VALORO MUCHO, YO JAMAS ME ABURRIRIA DE TI O DE HACER LO MISMO, PARA MI ERES MUY ESPECIAL Y TAMBIEN LO ES TODO EL TIEMPO QUE ESTAMOS JUNTOS, DE VERDAD AMO CON TODAS MIS FUERZAS CADA COSA, CADA PARTE DE TI LA AMO, POR QUE TU ME HACES SENTIR ESPECIAL DEMOSTRANDOME TU AMOR CADA DIA. HEMOS PASADO MUCHOS MOMENTOS DIVERTIDOS Y LINDOS, ME ENCANTARIA QUE PASARAMOS MOMENTOS ASI VIENDONOS FISICAMENTE PERO ESTAS EN MI CORAZON SIEMPRE Y COMO TE LO DIGO MI AMOR, VALORO CADA ESFUERZO QUE HACEMOS POR ESTAR EL UNO PARA EL OTRO, ME ENCANTA ESTAR CONTIGO, ESTOY MUY FELIZ Y ENAMORADO, ME HACES PERDER LA CONCIENCIA JSJS, GRACIAS POR AGUANTAR CUANDO HABLO DE COSAS TONTAS O POR A VECES ESTAR DE GORROSO, PERO SABES QUE TE AMO COMO A NADIE Y QUE SIEMPRE VOY A ESTAR PARA TI, QUISIERA PODER PASAR CONTIGO ESTE 14 DE FEBRERO PERO SE QUE NO TODO SE PUEDE, ESTAMOS PASANDO POR UNA SITUACION QUE NO PENSABAMOS QUE FUERA A SUCEDER, PERO SE QUE NUESTRO ES MAS GRANDE QUE TODO, Y TE AMO, DESDE ACA ESTARE CONTIGO Y HAREMOS LO QUE TU QUIERAS ESE DIA, POR QUE ES UN DIA MUY ESPECIAL Y QUISIERA COMPARTIRLO CONTIGO, LE PEDIRE A DIOS QUE NOS PERMITA ESTAR EL OTRO AÑO JUNTOS Y PODER DISFRUTARLO MEJOR, TE PODRIA INVITAR A TOMAR UN HELADO, O UNOS CHETOS CON SALSA Y UNA COCA ESTARIA GENIAL NO CREES? :D, GRACIAS POR ESTAR CONMIGO, GRACIAS POR COMPARTIR TODO TU AMOR CONMIGO, GRACIAS POR NO ALEJARTE DE MI, GRACIAS POR TODOS LOS MOMENTOS BONITOS, ERES MI MAS GRANDE AMOR, CUENTO LOS DIAS PARA PODER CONOCER AL AMOR DE MI VIDA Y ME HACE MUCHA ILUSION PENSAR EN TI, SIEMPRE QUIERO QUE ESTES BIEN, NO ME GUSTA VERTE TRISTE, NO ME GUSTA QUE SUFRAS, NO QUIERO HACERTE DAÑO, PREFERIRIA MIL VECES QUE TODO LO MALO ME PASARA A MI, MIENTRAS TU ESTUVIERAS BIEN AMOR, YO SERIA EL HOMBRE  MAS FELIZ DEL MUNDO MIENTRAS ME AMES Y ESTES BIEN, NO SE CUANTO TIEMPO MAS VAYAMOS A ESTAR EN LA VIDA DEL OTRO, DIOS NOS LO IRA CONTANDO, MIENTRAS TANTO SOLO QUIERO DEJARTE SABER QUE TE AMO Y QUE CADA SEGUNDO QUE PASAMOS JUNTOS ES MAGIA EN MI VIDA, CON TODO Y BROMAS Y ENFADOS, RISAS, LOCURAS, RECUERDOS QUE SIEMPRE VIVIRAN EN MI CORAZON, GRACIAS POR TOMAR EL RIESGO MAS GRANDE DE TODOS, SER MI AMOR, TE AMOOOOOOOOOOOOOOOOOOO </p>
+<a href="#" title="DAFF" onmouseover="MM_swapImage('ANSDSALKG','','../FB_IMG_1430434145955.jpg',1)" onmouseout="MM_swapImgRestore()"><CENTER><img src="WhatsApp Image 2021-02-06 at 23.55.54 (1).jpeg" width="533" height="433" alt=""/></a></CENTER>
+<p>&nbsp;</p>
+    <h2><center><MARQUEE> LO HERMOSA QUE ERES MI AMOR </MARQUEE></center></h2>
+    <p> MI AMOR CREO QUE ERES COMO LOS SANDWICHES Y SABES ALGO, A MI ME GUSTAN MUCHO LOS SADNWICHES. ME ENCANTAS, PARA MI ERES LA NIÑA MAS HERMOSA DEL PLANETA Y ERES COMO UNA PRINCESA, ERES MI PRINCESA, ME GUSTAS DE TODAS LAS FORMAS POSIBLES, EN CUALQUIER ANGULO, DE CUALQUIER MODO, PARA MI ERES BELLISIMAA, MIS OJITOS ME BRILLAN CADA QUE VEO TUS FOTOS, CADA QUE HACEMOS VIDEOLLAMADA, SI TOCARAS MI CORAZONCITO COMO LATE A 10000 DE SEGUNDOS SOLO CON VERTE, COMO SONRIO CADA QUE TE PIENSO, CADA QUE TE VEO, CADA QUE HABLO CONTIGO, AMOR SI CONTARA LAS VECES QUE TE PIENSO EN TODO UN DIA, CREO QUE NUNCA ACABARIA, ERES HERMOSA MI AMOR POR DENTRO Y POR FUERA, PARA MI LO ERES, ERES MI BEBE, Y TE AMO Y TE ADORO MUCHISIMO, ERES TODO LO QUE SIEMPRE HABIA SOÑADO, ASI TAL CUAL, ERES TU Y SOLO TU, POR QUE PARA MI NO HAY NADIE MAS ESPECIAL Y MAS HERMOSA QUE TU MI AMOR, CREEME CUANDO TE DIGO QUE ME ENCANTAS Y ME GUSTAS MUCHO POR QUE ASI TE VEO YO, TE VEO CON MIS OJOS COLOR CAFE Y TE JURO QUE NO VEO ALGO MAS QUE NO SEA UNA NIÑA MUY HERMOSA, SE QUE AHORITA NO PUEDO ESTAR CONTIGO Y MIRARTE A LOS OJOS PARA DECIRTELO PERO ME ENCANTARIA ESTAR A TU LADO ABRAZANDOTE Y DICIENDO CUANTO ME ENCANTAS Y AL FINAL DARTE UN BESITO CON MORDIDA, ME ENCANTA TODO DE TI AMOR, QUIERO QUE ME CREAS, ME GUSTAS TU, TODA TU Y SIMPLEMENTE TU, ME ENCANTA TU CARITA PRECIOSA, TODOS TUS RASGOS SON BELIISIMOS, TU CUERPO QUE ME ENCANTA TANTO, ME GUSTA TU FORMA DE HABLAR, ME GUSTA CUANDO SONRIES, ME GUSTAN TUS CACHETES MUCHO, ME GUSTAN LOS HOYITOS QUE SE TE HACEN AAAH ESO ME MATA, TE AMO SIMPLEMENTE TE AMO, Y ME ENCANTAS TAL Y COMO ERES, CON TODOS LOS DEFECTOS QUE TU DICES TENER, PARA MI SON HERMOSOS, PARA MI ERES LA NIÑA MAS LINDA Y DULCE QUE PUEDA EXISTIR MI AMOR, ERES PERFECTA ANTE MIS OJOS. ME GUSTA COMO SIN VERTE YO TE SIENTO, ME GUSTA COMO ME ALEGRAS EL DIA CON UNA SONRISA TUYA Y TU VOZ ES SUFICIENTE PARA QUE MI DIA EMPIEZE DE LO MEJOR, ME GUSTA PENSAR EN TI CUANDO NO ESTAS, ME GUSTA TU CUERPO, ME GUSTA TU INTERIOR, TUS SENTIMIENTOS Y ESE CORAZON TAN HERMOSO QUE TIENES, QUE NADIE TE HAGA DUDAR DE ESO JAMAS, ERES PRECIOSA. </p>
+    <CENTER><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','18578534_1534717536560682_40735599_n.jpg',1)"><img src="WhatsApp Image 2021-02-06 at 20.30.27.jpeg" width="360" height="350" alt=""/> </a></CENTER><P
+	
+    <p>
+	<CENTER><img src="WhatsApp Image 2021-02-06 at 23.57.41.jpeg" width="360" height="350" alt=""/></CENTER></p>
+<P>
+<h2><CENTER><MARQUEE> TE AMO PARA SIEMPRE MI VIDA 18.09.20 </MARQUEE></CENTER></h2>
+    <p>&nbsp;</p>
+  <!-- end .content --></div>
+  <div class="sidebar2">
+    <h4>¿ACEPTARIAS PASAR EL RESTO DE MI VIDA CONMIGO?</h4>
+    <P>
+    SI<input name="FUTBOL" type="checkbox" value="" />
+    <P>
+    SI PERO BAÑATE<input name="AGFGAS" type="checkbox" value="" /> <P>
+    SI PERO TE HUELEN LAS PATAS <input name="DASFSD" type="checkbox" value="" />
+    <P>
+    SI PERO EN LA BODA NO USES SOMBRERO<input name="" type="checkbox" value="" />
+    <P>
+    SI PERO ME CAES MAL<input name="WERH" type="checkbox" value="" />
+    <P> 
+    TODAS LAS ANTERIORES <input name="SAD" type="checkbox" value="" />
+    <P>
+    <p>&nbsp;</p>
+   
+    <!-- end .sidebar2 --></div>
+  <div class="footer">
+    <p> TE AMO    </p>
+    <p> TE AMARE </p>
+    <p> ERES EL AMOR DE MI VIDA PUMITA</p>
+    <p> ERES LA MEJOR PERSONA QUE HE CONOCIDO </p>
+    <p>ERES PRECIOSA Y ME ENCANTAS </p>
+	  <P> TE AMA CON TODO SU CORAZON TU NOVIO ROGER</P>
+    <!-- end .footer --></div>
+<!-- end .container --></div>
+</body>
+</html>
